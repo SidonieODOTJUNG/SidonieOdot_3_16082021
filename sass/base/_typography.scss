@@ -1,9 +1,28 @@
-
-body {
-    background-color: rgb(43, 135, 151);
-}
+// penser à faire une extension pour les text-typo
 h1 {
-    color: rgb(243, 152, 237);
-    font-style: oblique;
-    font-size: xx-large;
+    font-family: $title-logo-typo;
+}
+
+h2 {
+    font-family: $text-typo;
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+h3 {
+    font-family: $text-typo;
+}
+
+p {
+    font-family: $text-typo;
+    font-size: 1.1rem;
+}
+
+button {
+    font-family: $text-typo;
+   font-size: 0.9rem;
+}
+
+.special-characters {
+    font-style: normal;
 }

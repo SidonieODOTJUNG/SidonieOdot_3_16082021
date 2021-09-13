@@ -1,0 +1,61 @@
+
+
+.localisation {
+    width: 100%;
+    &__container-marker-item {
+        background-color: $medium-gray;
+        padding: 1rem;
+        text-align: center;
+        //TODO : travailler la box-shadow après
+        // box-shadow: inset 0px 1px 5px gray;
+
+        &__map-marker-p {
+            margin: 0;
+        }
+        
+        &__map-marker{
+            padding-right: 1rem;
+        }
+
+    }
+}
+
+.reservation {
+    width: 100%;
+    padding: 2.5rem 1px;
+    text-align: center;
+    background-color: $light-gray;
+    
+    &__title {
+        width: 70%;
+        margin: auto;
+        padding-bottom: 1rem;
+    }
+
+    &__p {
+        width: 85%;
+        margin: auto;
+
+        // margin: auto;
+    }
+}
+
+.steps {
+    // padding: 1.5rem 0px;
+    width: 100%;
+
+    &__buttons-container {
+        text-align: center;
+
+        &__items {
+            color: $dark-gray;
+            margin-right: 2rem;
+            font-size: 1.3rem;
+        }
+    }
+}
+
+.restaurants {
+    padding: 1.5rem 0px;
+    background-color: $light-gray;
+}

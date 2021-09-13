@@ -1,12 +1,19 @@
+@import "abstracts/variables";
 @import "abstracts/functions";
 @import "abstracts/mixins";
 @import "abstracts/placeholders";
-@import "./abstracts/variables";
+
 
 @import "base/typography";
 
+
 @import "composants/buttons";
+@import "composants/lists";
+@import "composants/articles";
+@import "composants/images";
 
 @import "layout/footer";
 @import "layout/header";
 @import "layout/navigation";
+
+@import "pages/acceuil";

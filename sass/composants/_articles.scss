@@ -1,0 +1,53 @@
+.restaurants {
+    &__articles-container {
+        margin: 2rem;
+        &__article {
+            background-color: white;
+            border-radius: 20px;
+            margin: 1rem 0;
+            width: 100%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 3px 3px $medium-gray, 0 0 ;
+            &__first-part{
+                &__img {
+                    z-index: 1;
+                }
+                &__new-tag {
+                    background-color: $tertiary-color;
+                    padding: 0.5rem 1rem;
+                    text-align: center;
+                    position: absolute;
+                    top: 15px;
+                    right: 15px;
+                    z-index: 2;
+                    border-radius: 3px;
+                    &--suppress-p-marges {
+                        margin: 0;
+                    }
+                }
+            }
+            &__second-part{
+                display: flex;
+                &__text {
+                    margin-left: 1rem;
+                    flex: 1;
+                    // TODO : vérif si je ne dois pas plutôt mettre en modificateur --suppress-h3-margin et --suppress-p-margin
+                    &__restautant-title {
+                        margin: 0.5rem auto 0 ;
+                    }
+                    &__restaurant-location {
+                        margin-top: 0.3rem;
+                    }
+                }
+                &__heart {
+                    padding: 1.2rem;
+                    font-size: 1.5rem;
+                    color: $dark-gray;                    
+                }
+            }
+
+        }
+    }
+}
