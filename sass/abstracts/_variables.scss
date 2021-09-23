@@ -6,6 +6,10 @@ $light-gray: rgb(248, 248, 248);
 $medium-gray: rgb(243, 243, 243);
 $dark-gray: rgb(105, 104, 105);
 
+$button-gradient: linear-gradient($secondary-color, $primary-color);
+// en prévision de l'animation
+$heart-gradient: linear-gradient($primary-color, $secondary-color);
+
 $title-logo-typo: 'Shrikhand', cursive;
 $text-typo: 'Roboto', sans-serif;
 

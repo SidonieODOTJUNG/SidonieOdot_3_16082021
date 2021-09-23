@@ -6,7 +6,9 @@
     border-radius: 30px;
     border: none;
     box-shadow: 0px 5px 3px $medium-gray;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    background: $gradient;
+    color: $medium-gray;
 }
 
 .simple-button {
@@ -20,5 +22,6 @@
     font-size: 1.1rem;
     &__items {
         padding-right: 1.2rem;
+        color: $dark-gray;
     }
 }
