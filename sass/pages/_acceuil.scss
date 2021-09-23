@@ -41,17 +41,18 @@
 }
 
 .steps {
-    // padding: 1.5rem 0px;
+    padding: 1.5rem 0px;
     width: 100%;
+    &__buttons-title {
+        margin-left: 1.5rem;
+    }
 
     &__buttons-container {
         text-align: center;
-
-        &__items {
-            color: $dark-gray;
-            margin-right: 2rem;
-            font-size: 1.3rem;
+        &__ol {
+            margin: 0 1.2rem 0 1.2rem;
         }
+
     }
 }
 

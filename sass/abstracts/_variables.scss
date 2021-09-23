@@ -6,8 +6,14 @@ $light-gray: rgb(248, 248, 248);
 $medium-gray: rgb(243, 243, 243);
 $dark-gray: rgb(105, 104, 105);
 
+// foncer la couleur du texte dans l'étiquette nouveau 
+// dans la présentation des restaurants de l'accueil
+$darken-tertiary-text: darken($tertiary-color, 45%);
+
+$lighten-primary-button-hover: lighten($primary-color, 36%);
+
 $button-gradient: linear-gradient($secondary-color, $primary-color);
-// en prévision de l'animation
+// TODO : en prévision de l'animation heart en page d'accueil
 $heart-gradient: linear-gradient($primary-color, $secondary-color);
 
 $title-logo-typo: 'Shrikhand', cursive;

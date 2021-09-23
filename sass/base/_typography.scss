@@ -1,26 +1,29 @@
-// penser à faire une extension pour les text-typo
-h1 {
+// TODO : penser à faire une extension pour les text-typo
+.logo-typo {
     font-family: $title-logo-typo;
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+h1 {
+    font-family: $text-typo;
+    font-size: 1.5rem;
 }
 
 h2 {
     font-family: $text-typo;
-    font-size: 1.5rem;
-    margin-left: 1.5rem;
-}
-
-h3 {
-    font-family: $text-typo;
+    font-size: 1rem;
 }
 
 p {
     font-family: $text-typo;
-    font-size: 1.1rem;
+    font-size: 0.97rem;
 }
 
 button {
     font-family: $text-typo;
-   font-size: 0.9rem;
+    font-size: 0.9rem;
+    font-weight: bold;
 }
 
 .special-characters {

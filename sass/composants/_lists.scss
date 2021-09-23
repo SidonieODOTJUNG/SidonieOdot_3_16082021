@@ -1,11 +1,23 @@
 ol {
+    list-style: none;
+    counter-reset: purple-bubulle-counter;
+    padding-left: 0;
     li {
-        color:$primary-color;
-        // background-color: $primary-color;
-        // color: white;
-        // &::before {
-        //     color: $secondary-color;
-        // }
+        counter-increment: purple-bubulle-counter;
+        position: relative;
+        // TODO : positionner dans une variable
+        &::before {
+            content: counter(purple-bubulle-counter);
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            top: 28px;
+            background: $primary-color;
+            color: white;
+            font-family: $text-typo;
+            border-radius: 50%;
+        }
+        
     }
 
 }
