@@ -113,11 +113,16 @@ ol li::before {
           box-shadow: 0 3px 3px #f3f3f3, 0 0;
 }
 
-.restaurants__articles-container__article__first-part__img {
+.restaurants__articles-container__article__a {
+  text-decoration: none;
+  color: black;
+}
+
+.restaurants__articles-container__article__a__first-part__img {
   z-index: 1;
 }
 
-.restaurants__articles-container__article__first-part__new-tag {
+.restaurants__articles-container__article__a__first-part__new-tag {
   background-color: #99E2D0;
   padding: 0.5rem 1rem;
   text-align: center;
@@ -128,37 +133,85 @@ ol li::before {
   border-radius: 3px;
 }
 
-.restaurants__articles-container__article__first-part__new-tag--suppress-p-marges {
+.restaurants__articles-container__article__a__first-part__new-tag--suppress-p-marges {
   margin: 0;
   color: #217460;
   font-weight: bold;
 }
 
-.restaurants__articles-container__article__second-part {
+.restaurants__articles-container__article__a__second-part {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.restaurants__articles-container__article__second-part__text {
+.restaurants__articles-container__article__a__second-part__text {
   margin-left: 1rem;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
-.restaurants__articles-container__article__second-part__text__restautant-title {
+.restaurants__articles-container__article__a__second-part__text__restautant-title {
   margin: 0.5rem auto 0;
 }
 
-.restaurants__articles-container__article__second-part__text__restaurant-location {
+.restaurants__articles-container__article__a__second-part__text__restaurant-location {
   margin-top: 0.3rem;
 }
 
-.restaurants__articles-container__article__second-part__heart {
+.restaurants__articles-container__article__a__second-part__heart {
   padding: 1.2rem;
   font-size: 1.5rem;
   color: #696869;
+}
+
+.menu {
+  background-color: #f3f3f3;
+  padding: 1rem;
+}
+
+.menu__container__category__title {
+  margin-bottom: 0;
+}
+
+.menu__container__category__underline {
+  display: inline-block;
+  width: 40px;
+  height: 3px;
+  background-color: #99E2D0;
+  margin-bottom: 10px;
+}
+
+.menu__container__category__article {
+  background-color: white;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+.menu__container__category__article__text {
+  padding: 0.5rem;
+}
+
+.menu__container__category__article__text__title {
+  margin: 0;
+}
+
+.menu__container__category__article__text__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu__container__category__article__text__description__ingredients {
+  margin: 0;
+}
+
+.menu__container__category__article__text__description__price {
+  margin: 0;
 }
 
 .logo-header {
