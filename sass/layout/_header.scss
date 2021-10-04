@@ -8,6 +8,17 @@ body {
     
     &__logo-container {
         padding: 1.5rem 0 0.5rem 0;
+        &__menu {
+// voir comment je fais pour placer ma fleche retour menu
+            display: flex;
+        }
+        a {
+            padding: 0.3rem 4rem 0 1rem;
+            display: block;
+            color: $dark-gray;
+            font-size: 1.2rem;
+        }
     }
+
     
 }

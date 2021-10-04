@@ -62,13 +62,12 @@
 }
 
 .menu {
-    background-color: $medium-gray;
-    padding: 1rem;
     &__container {
         &__category {
             &__title {
                 margin-bottom: 0;
             }
+
             &__underline {
                 display: inline-block;
                 width: 40px;
@@ -76,12 +75,13 @@
                 background-color: $tertiary-color;
                 margin-bottom: 10px;
             }
+
             &__article {
                 background-color: white;
                 border-radius: 20px;
                 margin-bottom: 1rem;
                 &__text {
-                    padding: 0.5rem;
+                    padding: 1rem;
                     &__title {
                         margin: 0;
                     }
@@ -93,10 +93,14 @@
                         }
                         &__price {
                             margin: 0;
+                            font-weight: bold;
+                            color: $dark-gray;
                         }
                     }
                 }
             }
+
         }
+        
     }
 }

@@ -6,7 +6,7 @@
 
 @import "base/typography";
 
-
+@import "composants/animations";
 @import "composants/buttons";
 @import "composants/lists";
 @import "composants/articles";
@@ -14,6 +14,6 @@
 
 @import "layout/footer";
 @import "layout/header";
-@import "layout/navigation";
 
 @import "pages/acceuil";
+@import "pages/menu";

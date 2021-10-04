@@ -1,7 +1,13 @@
-.logo-typo {
+.logo-typo-footer {
   font-family: "Shrikhand", cursive;
   margin: 0;
   font-size: 1.1rem;
+}
+
+.logo-typo-restaurant {
+  font-family: "Shrikhand", cursive;
+  margin: 0;
+  font-size: 1.5rem;
 }
 
 h1 {
@@ -12,6 +18,10 @@ h1 {
 h2 {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
 }
 
 p {
@@ -41,6 +51,7 @@ button {
   background: -o-linear-gradient(#FF79DA, #9356DC);
   background: linear-gradient(#FF79DA, #9356DC);
   color: #f3f3f3;
+  width: 55%;
 }
 
 .simple-button {
@@ -166,11 +177,6 @@ ol li::before {
   color: #696869;
 }
 
-.menu {
-  background-color: #f3f3f3;
-  padding: 1rem;
-}
-
 .menu__container__category__title {
   margin-bottom: 0;
 }
@@ -190,7 +196,7 @@ ol li::before {
 }
 
 .menu__container__category__article__text {
-  padding: 0.5rem;
+  padding: 1rem;
 }
 
 .menu__container__category__article__text__title {
@@ -212,6 +218,8 @@ ol li::before {
 
 .menu__container__category__article__text__description__price {
   margin: 0;
+  font-weight: bold;
+  color: #696869;
 }
 
 .logo-header {
@@ -234,6 +242,12 @@ ol li::before {
   height: 150px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+}
+
+.menu-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
 }
 
 .footer {
@@ -265,6 +279,19 @@ body {
 
 .header__logo-container {
   padding: 1.5rem 0 0.5rem 0;
+}
+
+.header__logo-container__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__logo-container a {
+  padding: 0.3rem 4rem 0 1rem;
+  display: block;
+  color: #696869;
+  font-size: 1.2rem;
 }
 
 .localisation {
@@ -323,5 +350,37 @@ body {
 .restaurants {
   padding: 1.5rem 0px;
   background-color: #f8f8f8;
+}
+
+.menu {
+  background-color: #f3f3f3;
+  padding: 1rem;
+  border-radius: 30px 30px 0 0;
+  position: relative;
+  top: -30px;
+  margin-bottom: -30px;
+}
+
+.menu__restaurant-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu__restaurant-title__heart-item {
+  font-size: 1.5rem;
+  color: #696869;
+}
+
+.menu__container__category__title {
+  font-weight: lighter;
+}
+
+.menu__button {
+  text-align: center;
+  padding-bottom: 2.5rem;
 }
 /*# sourceMappingURL=main.css.map */
