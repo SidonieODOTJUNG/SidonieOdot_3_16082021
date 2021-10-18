@@ -1,3 +1,4 @@
+// restaurants de la page d'accueil
 .restaurants {
     &__buttons-title {
         margin-left: 1.5rem;
@@ -42,7 +43,6 @@
                     &__text {
                         margin-left: 1rem;
                         flex: 1;
-                        // TODO : vérif si je ne dois pas plutôt mettre en modificateur --suppress-h3-margin et --suppress-p-margin
                         &__restautant-title {
                             margin: 0.5rem auto 0 ;
                         }
@@ -61,6 +61,8 @@
     }
 }
 
+
+// menus des pages menu
 .menu {
     &__container {
         &__category {

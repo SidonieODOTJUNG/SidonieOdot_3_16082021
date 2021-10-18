@@ -10,10 +10,10 @@ $dark-gray: rgb(105, 104, 105);
 // dans la présentation des restaurants de l'accueil
 $darken-tertiary-text: darken($tertiary-color, 45%);
 
+
 $lighten-primary-button-hover: lighten($primary-color, 36%);
 
 $button-gradient: linear-gradient($secondary-color, $primary-color);
-// TODO : en prévision de l'animation heart en page d'accueil
 $heart-gradient: linear-gradient($primary-color, $secondary-color);
 
 $title-logo-typo: 'Shrikhand', cursive;
