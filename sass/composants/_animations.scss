@@ -11,8 +11,7 @@
 .spinner-container {
     display: flex;
     background: $button-gradient;
-    // TODO : trouver que pour la bonne height soit prise en compte différemment suivant les ecrans (sans utiliser JS)
-    height: 950px;
+    height: 100vh;
     overflow-y: hidden;
     animation: slide-up 1.5s cubic-bezier(0, 1, 0.5, 1) 4s;
     animation-fill-mode: forwards;
@@ -105,7 +104,7 @@
 
 @keyframes slide-up {
     from {
-        max-height: 950px;
+        max-height: 100vh;
     }
     to {
         max-height: 0;
@@ -136,10 +135,28 @@
                 &__second-part{
                     &__heart {
                         &__heart-item {
-                            transition: all 250ms ease-in-out;
+                            position: relative;
+                            left: 30px;
+                            &:hover +&2 {
+                                animation: heart-scale 800ms ease-in-out;
+                                visibility: visible;
+                                transform: scale(1);
+                            }
+                        }
+                        &__heart-item2.fas {
+                            visibility: hidden;
+                            color: $primary-color;
+                            transform: scale(0);
                             &:hover {
+                                transition: all 800ms ease-in-out;
+                                visibility: visible;
+                                transform: scale(1);
+                            }
+                            &::before {
                                 background: $heart-gradient;
-                                color: $heart-gradient;
+                                background-clip: text;
+                                -webkit-text-fill-color: transparent;
+                                display: initial;
                             }
                         }
                     }
@@ -149,4 +166,22 @@
 
     }
 }
+
+@keyframes heart-scale {
+    0% {
+        transform: scale(0);
+    }
+    30% {
+        transform: scale(0.3);
+    }
+    60% {
+        transform: scale(0.6);
+    }
+    100% {
+        transform: scale(1);
+    }   
+}
+
+
+
 
