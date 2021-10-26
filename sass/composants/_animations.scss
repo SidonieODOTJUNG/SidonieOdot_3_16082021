@@ -182,39 +182,39 @@
 
 // affichage progressif du menu
 
-// .menu {
-//     &__container {
-//         &__category {
-//             &__articles-container {
-//                 height: 350px;
-//                 overflow: hidden;               
-//                 &__article {
-//                     position: relative;
-//                     top:100%;
-//                     animation: show_dish 2s cubic-bezier(.91,-0.22,.6,1.28) forwards;
-//                     &:first-child {
-//                         animation-delay: 0s;
-//                     }
-//                     &:nth-child(2) {
-//                         animation-delay: 0.360s;
-//                     }
-//                     &:last-child {
-//                         animation-delay: 0.720s;
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
+.menu {
+    &__container {
+        &__category {
+            &__articles-container {
+                height: 350px;
+                overflow: hidden;               
+                &__article {
+                    position: relative;
+                    top:100%;
+                    animation: show_dish 2s cubic-bezier(.91,-0.22,.6,1.28) forwards;
+                    &:first-child {
+                        animation-delay: 0s;
+                    }
+                    &:nth-child(2) {
+                        animation-delay: 0.360s;
+                    }
+                    &:last-child {
+                        animation-delay: 0.720s;
+                    }
+                }
+            }
+        }
+    }
+}
 
-// @keyframes show_dish {
-//     from {
-//         top:100%;
-//     }
-//     to {
-//         top: 3%;
-//     }
-// }
+@keyframes show_dish {
+    from {
+        top:100%;
+    }
+    to {
+        top: 3%;
+    }
+}
 
 // animation du prix
 
