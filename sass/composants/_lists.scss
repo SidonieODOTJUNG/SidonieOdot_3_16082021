@@ -5,7 +5,6 @@ ol {
     li {
         counter-increment: purple-bubulle-counter;
         position: relative;
-        // TODO : positionner dans une variable
         &::before {
             content: counter(purple-bubulle-counter);
             position: absolute;

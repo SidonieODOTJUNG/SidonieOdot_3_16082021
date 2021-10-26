@@ -8,7 +8,10 @@
 .logo-typo-restaurant {
     font-family: $title-logo-typo;
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+    @media (min-width: 800px) {
+        margin: auto;
+    }
 }
 
 h1 {

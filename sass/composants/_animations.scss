@@ -6,7 +6,6 @@
 
 
 // spinner 
-// trouver pour cacher la div .spiner-container en fin d'animation
 
 .spinner-container {
     display: flex;
@@ -21,8 +20,8 @@
         height: 80px;
         margin: auto;
         div {
-            // animation: lds-roller 1.8s cubic-bezier(0.5, 0, 0.5, 1) 2;
             animation: lds-roller 1.8s cubic-bezier(0.5, 0, 0.5, 1) 3;
+            // formard va empecher la répétition de l'animation
             animation-fill-mode: forwards;
             transform-origin: 40px 40px;
             &::after {
@@ -123,10 +122,8 @@
 
  
 
-// coeurs card .restaurants
-// comment changer l'item? 
-// restaurants__articles-container__article__a__second-part__heart__heart-item
-// restaurants__articles-container__article__a__second-part__heart__heart-item2 (voir comment basculer d'item à item2
+// remplissage progressif des coeurs dans les card .restaurants
+
 
 .restaurants {
     &__articles-container {
@@ -183,5 +180,119 @@
 }
 
 
+// affichage progressif du menu
 
+// .menu {
+//     &__container {
+//         &__category {
+//             &__articles-container {
+//                 height: 350px;
+//                 overflow: hidden;               
+//                 &__article {
+//                     position: relative;
+//                     top:100%;
+//                     animation: show_dish 2s cubic-bezier(.91,-0.22,.6,1.28) forwards;
+//                     &:first-child {
+//                         animation-delay: 0s;
+//                     }
+//                     &:nth-child(2) {
+//                         animation-delay: 0.360s;
+//                     }
+//                     &:last-child {
+//                         animation-delay: 0.720s;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
 
+// @keyframes show_dish {
+//     from {
+//         top:100%;
+//     }
+//     to {
+//         top: 3%;
+//     }
+// }
+
+// animation du prix
+
+.menu {
+    &__container {
+        &__category {
+            &__articles-container {
+                &__article {
+                    &__text {
+                        &__title { 
+                                text-overflow: ellipsis;
+                                overflow: hidden;
+                                white-space: nowrap;
+                        }
+                        &__description {
+                            &__ingredients {
+                                text-overflow: ellipsis;
+                                overflow: hidden;
+                                white-space: nowrap;
+                            }
+                        }
+                    }
+
+                    &__hovercheck {
+                        transition: transform 1s linear;
+                        transform: scaleX(0);
+                        display: block;
+                        background-color: $tertiary-color;
+                        color: white;
+                        position: relative;
+                        width: 21%;
+                        line-height: 70px;
+                        border-radius: 0 15px 15px 0;
+                        overflow: hidden;
+                        .fa-spin {
+                            animation: fa-spin 1s linear 1 forwards;
+                            animation-play-state: paused;
+                            width: 1em;
+                            position:absolute;
+                            top: 32%;
+                            right: 34%;
+                            // tranlate ne fontionne pas // right non plus
+                            // transition: transform 0.6 linear;
+                            // transform: translateX(100px);
+                        }
+                    }
+                    &:hover {
+                        display: flex;
+                    }
+
+                    &:hover &__hovercheck {
+                        transform : scaleX(1);
+                        transform-origin: right;
+                    }
+
+                    &:hover &__text {
+                        width: 75%;
+                    }
+
+                    &:hover .fa-spin {
+                        // ne run que pour un seul hover
+                        animation-play-state: running;
+                        // transform: translateX(0px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes fa-spin {
+    // voir pour le translatex de la check
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+
+    }
+    
+}

@@ -43,8 +43,16 @@
 .steps {
     padding: 1.5rem 0px;
     width: 100%;
+    @media (min-width: 800px) {
+        width: 20%;
+        margin: auto;
+    }
     &__buttons-title {
         margin-left: 1.5rem;
+        @media (min-width: 800px) {
+            margin-left: 0;
+            text-align: center;
+        }
     }
 
     &__buttons-container {

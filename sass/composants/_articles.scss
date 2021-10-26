@@ -2,10 +2,21 @@
 .restaurants {
     &__buttons-title {
         margin-left: 1.5rem;
+        @media (min-width: 800px) {
+            margin-left: 0;
+            text-align: center;
+        }
     }
 
     &__articles-container {
         margin: 0 1.2rem 0 1.2rem;
+        @media (min-width: 800px) {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 50%;
+            margin: auto;
+        }
         &__article {
             background-color: white;
             border-radius: 20px;
@@ -15,6 +26,9 @@
             display: flex;
             flex-direction: column;
             box-shadow: 0 3px 3px $medium-gray, 0 0 ;
+            @media (min-width: 800px) {
+                width: 20rem;
+            }
             &__a {
                 text-decoration: none;
                 color: black;
@@ -63,9 +77,17 @@
 
 
 // menus des pages menu
+// menu__container__category__articles-container__article
 .menu {
     &__container {
+        @media (min-width: 800px) {
+            display: flex;
+            justify-content: space-evenly;
+        }
         &__category {
+            @media (min-width: 800px) {
+                width: 400px ;
+            }
             &__title {
                 margin-bottom: 0;
             }
@@ -78,31 +100,42 @@
                 margin-bottom: 10px;
             }
 
-            &__article {
-                background-color: white;
-                border-radius: 20px;
-                margin-bottom: 1rem;
-                &__text {
-                    padding: 1rem;
-                    &__title {
-                        margin: 0;
-                    }
-                    &__description {
-                        display: flex;
-                        justify-content: space-between;
-                        &__ingredients {
+            &__articles-container {
+                &__article {
+                    background-color: white;
+                    border-radius: 15px;
+                    margin-bottom: 1rem;
+                    box-shadow: 0px 5px 10px 0px darken($medium-gray, 10%);
+                    cursor: pointer;
+                    &__text {
+                        padding: 0.7rem;
+                        &__title {
                             margin: 0;
+                            font-size: 1.05rem;
+                            padding-bottom: 0.3rem;
+                            @media (min-width: 800px) {
+                                font-size: 1.2rem;
+                            }
                         }
-                        &__price {
-                            margin: 0;
-                            font-weight: bold;
-                            color: $dark-gray;
+                        &__description {
+                            display: flex;
+                            justify-content: space-between;
+                            &__ingredients {
+                                margin: 0;
+                                font-size: 0.88rem;
+                                @media (min-width: 800px) {
+                                    font-size: 1rem;
+                                }
+                            }
+                            &__price {
+                                margin: 0;
+                                font-weight: bold;
+                                color: $dark-gray;
+                            }
                         }
                     }
                 }
             }
-
         }
-        
     }
 }
