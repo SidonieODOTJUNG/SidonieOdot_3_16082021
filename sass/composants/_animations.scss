@@ -149,12 +149,6 @@
                                 visibility: visible;
                                 transform: scale(1);
                             }
-                            &::before {
-                                background: $heart-gradient;
-                                background-clip: text;
-                                -webkit-text-fill-color: transparent;
-                                display: initial;
-                            }
                         }
                     }
                 }
@@ -186,7 +180,7 @@
     &__container {
         &__category {
             &__articles-container {
-                height: 350px;
+                height: 250px;
                 overflow: hidden;               
                 &__article {
                     position: relative;
@@ -249,16 +243,12 @@
                         line-height: 70px;
                         border-radius: 0 15px 15px 0;
                         overflow: hidden;
-                        .fa-spin {
-                            animation: fa-spin 1s linear 1 forwards;
-                            animation-play-state: paused;
+                        .faspin {
+                            transition: all 1s linear;
                             width: 1em;
                             position:absolute;
                             top: 32%;
                             right: 34%;
-                            // tranlate ne fontionne pas // right non plus
-                            // transition: transform 0.6 linear;
-                            // transform: translateX(100px);
                         }
                     }
                     &:hover {
@@ -274,25 +264,11 @@
                         width: 75%;
                     }
 
-                    &:hover .fa-spin {
-                        // ne run que pour un seul hover
-                        animation-play-state: running;
-                        // transform: translateX(0px);
+                    &:hover .faspin {
+                        transform: rotate(360deg);
                     }
                 }
             }
         }
     }
-}
-
-@keyframes fa-spin {
-    // voir pour le translatex de la check
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-
-    }
-    
 }
