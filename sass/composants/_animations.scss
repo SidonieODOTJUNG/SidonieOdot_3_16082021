@@ -147,7 +147,10 @@
                         }
                         &__heart-item2.fas {
                             visibility: hidden;
-                            color: $primary-color;
+                            // color: $primary-color;
+                            background: $heart-gradient;
+                            background-clip: text;
+                            -webkit-text-fill-color: transparent;
                             transform: scale(0);
                             &:hover {
                                 transition: all 800ms ease-in-out;
@@ -167,6 +170,54 @@
 
     }
 }
+
+
+.heart {
+    padding: 1.2rem;
+    font-size: 1.5rem;
+    color: $dark-gray;    
+    &__heart-menu-item {
+        position: relative;
+        left: 30px;
+        &:hover +&2 {
+            animation: heart-scale 800ms ease-in-out;
+            visibility: visible;
+            transform: scale(1);
+        }
+        &:active +&2 {
+            animation: heart-scale 800ms ease-in-out;
+            visibility: visible;
+            transform: scale(1);
+        }
+    }
+    &__heart-menu-item2.fas {
+        visibility: hidden;
+        // color: $primary-color;
+        background: $heart-gradient;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transform: scale(0);
+        @media (max-width: 700px) {
+            position: relative;
+            left: 30px;
+            top: -28px;
+        }
+        &:hover {
+            transition: all 800ms ease-in-out;
+            visibility: visible;
+            transform: scale(1);
+        }
+        &:active {
+            transition: all 800ms ease-in-out;
+            visibility: visible;
+            transform: scale(1);
+
+        }
+    }
+}
+
+
+
 
 @keyframes heart-scale {
     0% {
