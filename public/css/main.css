@@ -232,6 +232,15 @@ button {
           transform: scale(1);
 }
 
+.restaurants__articles-container__article__a__second-part__heart__heart-item:active + .restaurants__articles-container__article__a__second-part__heart__heart-item2 {
+  -webkit-animation: heart-scale 800ms ease-in-out;
+          animation: heart-scale 800ms ease-in-out;
+  visibility: visible;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+
 .restaurants__articles-container__article__a__second-part__heart__heart-item2.fas {
   visibility: hidden;
   color: #9356DC;
@@ -241,6 +250,16 @@ button {
 }
 
 .restaurants__articles-container__article__a__second-part__heart__heart-item2.fas:hover {
+  -webkit-transition: all 800ms ease-in-out;
+  -o-transition: all 800ms ease-in-out;
+  transition: all 800ms ease-in-out;
+  visibility: visible;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+
+.restaurants__articles-container__article__a__second-part__heart__heart-item2.fas:active {
   -webkit-transition: all 800ms ease-in-out;
   -o-transition: all 800ms ease-in-out;
   transition: all 800ms ease-in-out;
@@ -396,6 +415,31 @@ button {
 }
 
 .menu__container__category__articles-container__article:hover .faspin {
+  -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.menu__container__category__articles-container__article:active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu__container__category__articles-container__article:active .menu__container__category__articles-container__article__hovercheck {
+  -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: right;
+      -ms-transform-origin: right;
+          transform-origin: right;
+}
+
+.menu__container__category__articles-container__article:active .menu__container__category__articles-container__article__text {
+  width: 75%;
+}
+
+.menu__container__category__articles-container__article:active .faspin {
   -webkit-transform: rotate(360deg);
       -ms-transform: rotate(360deg);
           transform: rotate(360deg);

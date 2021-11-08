@@ -139,12 +139,22 @@
                                 visibility: visible;
                                 transform: scale(1);
                             }
+                            &:active +&2 {
+                                animation: heart-scale 800ms ease-in-out;
+                                visibility: visible;
+                                transform: scale(1);
+                            }
                         }
                         &__heart-item2.fas {
                             visibility: hidden;
                             color: $primary-color;
                             transform: scale(0);
                             &:hover {
+                                transition: all 800ms ease-in-out;
+                                visibility: visible;
+                                transform: scale(1);
+                            }
+                            &:active {
                                 transition: all 800ms ease-in-out;
                                 visibility: visible;
                                 transform: scale(1);
@@ -265,6 +275,24 @@
                     }
 
                     &:hover .faspin {
+                        transform: rotate(360deg);
+                    }
+
+
+                    &:active {
+                        display: flex;
+                    }
+
+                    &:active &__hovercheck {
+                        transform : scaleX(1);
+                        transform-origin: right;
+                    }
+
+                    &:active &__text {
+                        width: 75%;
+                    }
+
+                    &:active .faspin {
                         transform: rotate(360deg);
                     }
                 }
